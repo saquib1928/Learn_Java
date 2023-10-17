@@ -1,1 +1,51 @@
+// to check whether number is even or odd and if it less than or greater than 100
 
+import java.io.*;
+
+class funEvenOdd
+{
+	public static void main(String args[]) throws IOException
+	{
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		 
+		System.out.println("Enter a number");
+		int number = Integer.parseInt(input.readLine());
+		
+		
+		// function names 
+		even_odd(number);
+		hundred(number);		
+		fifty(number);		
+	}
+	
+	public static void even_odd(int n)// function 1
+	{
+		if (n % 2 == 0)
+		{
+			System.out.println("Number is even");
+		}
+		else
+			System.out.println("Number is odd");		
+	}
+	
+	public static void hundred(int a)
+	{
+		if (a > 100)
+		{
+			System.out.println("Number is greater than 100");
+		}
+		else 
+			System.out.println("Number is less than 100");	
+	
+	}
+	
+	public static void fifty(int f)
+	{	
+		if (f > 50)
+		{
+			System.out.println("Number is greater than 50");
+		}
+		else 
+			System.out.println("Number is less than 50");
+	}			
+}

@@ -1,0 +1,47 @@
+import java.io.*;
+  
+  class ParkingLot
+    {
+	    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		int vno;
+		long hours;
+		long bill;
+		
+		
+		 public static void input
+		 
+		System.out.println("enter the vehicle number");
+		int vno = Integer.parseInt(input.readLine);
+		 
+		System.out.println("enter the duration of parking");
+        long hours = Integer.parseInt(input.readLine);
+		}
+		
+		public static void calculate()
+		{
+			if (hours<=1)
+			{
+			 bill = hours*3;
+			}
+			else
+				{
+			 bill = 3+(hours-1)*1.5;
+				}
+		}
+		
+		public static void display ()
+		{
+			System.out.println("vehicle number of car is" + vno);
+			System.out.println("duration of parking" + hours);
+		}
+		
+		public static void main(String args[])
+		{
+			ParkingLot obj = new ParkingLot ();
+			obj.input();
+			obj.calculate();
+			obj.display();
+		}
+	
+	}
+     
